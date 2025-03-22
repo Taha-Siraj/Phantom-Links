@@ -120,133 +120,36 @@
             <h1 class="text-2xl md:text-3xl gradient-text font-bold text-center title-font tracking-wide">WhatsApp Discussion Group</h1>
             <img src="logo.jpg" class="h-[160px] w-[160px] rounded-xl floating object-cover shadow-lg" alt="Logo">
             <p class="text-center text-lg font-medium px-4 text-gray-300">Join our exclusive discussion group for deep insights & networking.</p>
-            <button class="btn-hover w-full max-w-xs transition-all duration-300 transform hover:scale-105 hover:bg-gradient-to-r from-[#60A9FA]/20 to-[#3B82F6]/20 bg-[#1E293B]/50 border border-[#2F3847] rounded-xl text-lg py-4 px-8 flex items-center justify-center gap-3">
-                <i class="fab fa-whatsapp text-2xl text-green-400"></i>
-                <span class="font-semibold tracking-wide">Join Now</span>
-            </button>
+    
+                <a  class="btn-hover w-full max-w-xs transition-all duration-300 transform hover:scale-105 hover:bg-gradient-to-r from-[#60A9FA]/20 to-[#3B82F6]/20 bg-[#1E293B]/50 border border-[#2F3847] rounded-xl text-lg py-4 px-8 flex items-center justify-center gap-3 font-semibold tracking-wide" href="https://chat.whatsapp.com/HZDsRu9oT7E2f9DosbQ6lT">Join Now
+                    <i class="fab fa-whatsapp text-2xl text-green-400"></i>
+                </a>
+           
         </div>
 
         <div class="w-full md:w-[380px] h-[520px] py-8 px-6 flex flex-col items-center justify-between card-container bg-[#131B2E]/50 border border-[#2F3847]/50 rounded-2xl hover:border-[#60A9FA]/30 transition-all duration-300">
             <h1 class="text-2xl md:text-3xl gradient-text font-bold text-center title-font tracking-wide">WhatsApp Channel</h1>
             <img src="logo.jpg" class="h-[160px] w-[160px] rounded-xl floating object-cover shadow-lg" alt="Logo">
             <p class="text-center text-lg font-medium px-4 text-gray-300">Get premium resources & insights directly in your WhatsApp.</p>
-            <button class="btn-hover w-full max-w-xs transition-all duration-300 transform hover:scale-105 hover:bg-gradient-to-r from-[#60A9FA]/20 to-[#3B82F6]/20 bg-[#1E293B]/50 border border-[#2F3847] rounded-xl text-lg py-4 px-8 flex items-center justify-center gap-3">
+                <a  class="btn-hover w-full max-w-xs transition-all duration-300 transform hover:scale-105 hover:bg-gradient-to-r from-[#60A9FA]/20 to-[#3B82F6]/20 bg-[#1E293B]/50 border border-[#2F3847] rounded-xl text-lg py-4 px-8 flex items-center justify-center gap-3 font-semibold tracking-wide" href="https://whatsapp.com/channel/0029VarvKzuGufIucsj4UU20">Join Channel
                 <i class="fas fa-broadcast-tower text-2xl text-yellow-400"></i>
-                <span class="font-semibold tracking-wide">Join Channel</span>
-            </button>
+                </a>
+
         </div>
 
         <div class="w-full md:w-[380px] h-[520px] py-8 px-6 flex flex-col items-center justify-between card-container bg-[#131B2E]/50 border border-[#2F3847]/50 rounded-2xl hover:border-[#60A9FA]/30 transition-all duration-300">
             <h1 class="text-2xl md:text-3xl gradient-text font-bold text-center title-font tracking-wide">YouTube Channel</h1>
             <img src="logo.jpg" class="h-[160px] w-[160px] rounded-xl floating object-cover shadow-lg" alt="Logo">
-            <p class="text-center text-lg font-medium px-4 text-gray-300">Subscribe for high-quality finance and investing content.</p>
-            <button class="btn-hover w-full max-w-xs transition-all duration-300 transform hover:scale-105 hover:bg-gradient-to-r from-[#60A9FA]/20 to-[#3B82F6]/20 bg-[#1E293B]/50 border border-[#2F3847] rounded-xl text-lg py-4 px-8 flex items-center justify-center gap-3">
-                <i class="fab fa-youtube text-2xl text-red-500"></i>
-                <span class="font-semibold tracking-wide">Subscribe</span>
-            </button>
+            <p class="text-center text-lg font-medium px-4 text-gray-300">Subscribe for high-quality  and interesting content.</p>
+            
+                <a class="btn-hover w-full max-w-xs transition-all duration-300 transform hover:scale-105 hover:bg-gradient-to-r from-[#60A9FA]/20 to-[#3B82F6]/20 bg-[#1E293B]/50 border border-[#2F3847] rounded-xl text-lg py-4 px-8 flex items-center justify-center gap-3 font-semibold tracking-wide" href="https://www.youtube.com/@Phantomlinks">Subscribe  
+
+                    <i class="fab fa-youtube text-2xl text-red-500"></i>
+                   
+                </a>
+           
         </div>
 
     </div>
-
-   <script>
-     
-        function createParticles() {
-            const particlesContainer = document.getElementById('particles');
-            const particleCount = 30;
-
-            for (let i = 0; i < particleCount; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                
-                const size = Math.random() * 300 + 100;
-                particle.style.width = `${size}px`;
-                particle.style.height = `${size}px`;
-                
-                particle.style.left = `${Math.random() * 100}%`;
-                particle.style.top = `${Math.random() * 100}%`;
-                
-                particlesContainer.appendChild(particle);
-
-                // Animate particle
-                gsap.to(particle, {
-                    x: 'random(-100, 100)',
-                    y: 'random(-100, 100)',
-                    duration: 'random(10, 20)',
-                    repeat: -1,
-                    yoyo: true,
-                    ease: 'none'
-                });
-            }
-
-            // Add glowing effects
-            for (let i = 0; i < 5; i++) {
-                const glow = document.createElement('div');
-                glow.className = 'glow';
-                
-                const size = Math.random() * 500 + 200;
-                glow.style.width = `${size}px`;
-                glow.style.height = `${size}px`;
-                
-                glow.style.left = `${Math.random() * 100}%`;
-                glow.style.top = `${Math.random() * 100}%`;
-                
-                particlesContainer.appendChild(glow);
-
-                gsap.to(glow, {
-                    x: 'random(-200, 200)',
-                    y: 'random(-200, 200)',
-                    duration: 'random(15, 30)',
-                    repeat: -1,
-                    yoyo: true,
-                    ease: 'none'
-                });
-            }
-        }
-
-        // GSAP Animations
-        gsap.registerPlugin(ScrollTrigger);
-
-        gsap.from("header", {
-            y: -100,
-            opacity: 0,
-            duration: 1.2,
-            ease: "power4.out"
-        });
-
-        gsap.from(".card-container", {
-            y: 100,
-            stagger: 0.3,
-            duration: 1.2,
-            ease: "power4.out",
-            scrollTrigger: {
-                trigger: ".card-container",
-                start: "top bottom",
-                end: "bottom center",
-                toggleActions: "play none none reverse"
-            }
-        });
-
-        // Initialize particles
-        createParticles();
-
-        // Card hover effects
-        document.querySelectorAll('.card-container').forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                gsap.to(card, {
-                    scale: 1.02,
-                    duration: 0.3,
-                    ease: "power2.out"
-                });
-            });
-
-            card.addEventListener('mouseleave', () => {
-                gsap.to(card, {
-                    scale: 1,
-                    duration: 0.3,
-                    ease: "power2.out"
-                });
-            });
-        });
-    </script> 
 </body>
 </html>
